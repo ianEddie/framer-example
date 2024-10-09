@@ -1,0 +1,9 @@
+.section {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  background-color: #93c5fd;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}

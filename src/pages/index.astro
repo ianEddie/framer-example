@@ -1,0 +1,14 @@
+---
+import About from '../About/components/About';
+import Header from '../Header/Header';
+import Hero from '../Hero/components/Hero';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title='Welcome to Astro.'>
+  <Header client:load />
+  <main>
+    <Hero client:load />
+    <About client:load />
+  </main>
+</Layout>
