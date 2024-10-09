@@ -29,13 +29,13 @@ export default function Header() {
       onFocusCapture={() => setIsHidden(false)}
       transition={{ duration: 0.2 }}
       animate={isHidden ? 'hidden' : 'visible'}
-      className='fixed top-0 flex gap-x-10 py-3 px-10 rounded-b-3xl bg-neutral-100 z-30'
+      className='fixed top-0 flex gap-x-10 py-3 px-10 rounded-b-3xl bg-white border border-stone-300 z-30'
     >
       {HEADER_DATA.map(({ name }) => (
         <a
           key={name}
           href='/'
-          className='rounded-xl border border-neutral-400 px-4 py-px'
+          className='rounded-lg border border-neutral-300 px-4 py-px uppercase text-sm font-medium'
         >
           {name}
         </a>
